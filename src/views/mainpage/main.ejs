@@ -3,9 +3,19 @@
 <head>
     <%- include("../generals/head") %>
 </head>
-<body>
-    <h1 class="underline">From home page ejs</h1>
-    <a href="/news"> to news page</a>
-    <p>Commit has been succeded</p>
+<body class="bg-black text-slate-50">
+    <div class="relative h-screen bg-gradient-to-t from-black">
+        <img src="static/pexels-sameera-madusanka-1572036.jpg" alt="leaves" class="absolute -z-10 h-full w-full object-cover opacity-40">
+        <div class="container p-6 mx-auto flex justify-center items-center h-screen">
+            <%- include("../generals/nav") %>
+            <h1 class="block uppercase mr-10 font-semibold text-6xl font-vivik">dogs and <span class="text-green-800">coffee</span> is all you need</h1>
+            <p class="pl-16 first-line:text-green-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore explicabo ut facilis odit obcaecati illum enim omnis, dignissimos sequi odio doloremque adipisci dolorum, libero quam! Temporibus ad culpa veritatis voluptatibus similique vitae, cumque aut labore aperiam blanditiis expedita ea!</p>
+        </div>
+    </div>
+    <div class="container p-6 bg-black mx-auto flex justify-center h-screen">
+    </div>
+    <div class="container p-6 bg-black mx-auto flex flex-col items-center h-full">
+        
+    </div>
 </body>
 </html>

@@ -1,0 +1,58 @@
+<div class="fixed top-0 w-full h-24 text-3xl">
+    <div class="p-5 bg-gradient-to-b from-green-900 to-transparent h-full flex items-center">
+        <!-- Hamburger menu -->
+        <div class="fixed z-50 top-[40px] right-[100px] text-[40px] cursor-pointer">
+            <ion-icon class="" name="grid-outline" onclick="Open(this)"></ion-icon>
+        </div>
+        <div class="fixed top-[40px] left-[100px] text-[40px] cursor-pointer">
+            <a href="/" class="text-green-700">
+                <ion-icon name="leaf"></ion-icon>
+            </a>
+        </div>
+        <!-- Main menu -->
+        <div id="hamm" class="fixed overflow-hidden top-0 left-0 bg-black h-screen flex justify-center items-center origin-left duration-500 w-0">
+            <div class="flex w-full justify-around">
+                <div class="">
+                    <h1 class="block mb-14 ml-10 text-green-900 font-semibold">Layout 1</h1>
+                    <ul class="flex flex-col">
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">first section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">second section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">third section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">fourth section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">fifth section</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="block mb-14 ml-10 text-green-900 font-semibold">Layout 2</h1>
+                    <ul class="flex flex-col">
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">first section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">second section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">third section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">fourth section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">fifth section</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="block mb-14 ml-10 text-green-900 font-semibold">Layout 3</h1>
+                    <ul class="flex flex-col">
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">first section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">second section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">third section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">fourth section</a></li>
+                        <li class="block self-center mb-4 hover:text-green-800 hover:underline transition-all duration-150"><a href="">fifth section</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+<script>
+    let ham = document.getElementById("hamm")
+    function Open() {
+        ham.classList.toggle("w-[100%]")
+        ham.classList.toggle("w-0")
+        
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
